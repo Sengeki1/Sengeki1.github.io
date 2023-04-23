@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('https://wallpapers-hub.art/wallpaper-images/38123.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;   
+    padding-right: 8%;
+}
+
+#btn {
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 86%;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 1px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 1px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.logo {
+    font-family: "Times New Roman";
+    color: white;
+    font-size: 30px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+span {
+    color: lightskyblue;
+    font-family: "Times New Roman";
+}
+
+nav ul {
+    padding-right: 100px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: lightskyblue;
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.profile {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+h1 {
+    font-family: "Times New Roman";
+    margin: 20px 0px;
+    font-size: 65px;
+    position: relative;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    letter-spacing: 3px;
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+.profile img {
+    position: absolute;
+    width: 90%;
+    border-radius: 10px;
+    top: -200px;
+    left: 670px;
+    transition: 0.3s ease-in-out;  
+}
+
+@keyframes blur-animation {
+    0% { box-shadow: 0 0 50px rgba(255, 255, 255, 0.137); }
+    50% { box-shadow: 0 0 100px rgba(255, 255, 255, 0.137); }
+    100% { box-shadow: 0 0 50px rgba(255, 255, 255, 0.137); }
+}
+
+.profile img:hover {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    cursor: pointer;
+    animation: blur-animation 1.5s infinite;
+}
+
+#about {
+    color: white;
+    background: rgba(0, 0, 0, 0.952);
+    width: 100%;
+    padding: 100px 0;
+}
+
+#about h2 {
+    position: absolute;
+    bottom: -80px;
+    left: 45%;
+}
+
+#about h2::after {
+    content: "";
+    width: 110px;
+    height: 3px;
+    display: block;
+    background-color: lightskyblue;
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 17px;
+    font-family: "Times New Roman";
+    justify-content: center;
+    margin: 0px 300px 0px; 
+}
+
+#skills {
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 50px 80px 50px;
+}
+#skills .title {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+}
+
+#skills .title::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    display: block;
+    background-color: lightskyblue;
+    margin: 0 auto;
+}
+
+#skills img {
+    width: 20%;
+}
+
+#social {
+    color: white;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.952);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+#social h2 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#social h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    display: block;
+    background-color: lightskyblue;
+    margin: 0 auto;
+}
+
+#social p {
+    padding-bottom: 10px;
+}
+
+#social a{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;   
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
