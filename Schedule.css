@@ -2,12 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Times New Roman", Arial, sans-serif;
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.952);
+    background-image: url("https://rare-gallery.com/mocahbig/433448-vaporwave-synthwave-grid-sphere-abstract-3D-Abstract.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1, h3 {
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h1 span{
+    color: #FA2C08;
+}
+
+h3 span{
+    color: lightskyblue;
+}
+
+#table1 th {
+    color: black;
+}
+
+th, td {
     color: white;
+}
+
+#table1 {
+    margin-top: 50px;
+    margin-left: 102.4px;
+    margin-bottom: -3px;
+}
+
+table {
+    margin-left: 250px;
+    border-spacing: 2px;
+}
+
+table #table2 {
+    margin-left:250px;
+}
+
+.time {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+    font-size: 20px;
+}
+
+.time1 {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px
+}
+
+footer {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 145px;
+    font-size: 19px;
+}
+
+footer span {
+    color: lightskyblue;
 }
