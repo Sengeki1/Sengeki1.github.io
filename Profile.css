@@ -231,8 +231,11 @@ h4 {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 30px;
-    padding-right: 10px;   
+    padding-right: 10px;  
+}
+
+#social img {
+    width: 40px;
 }
 
 footer {
