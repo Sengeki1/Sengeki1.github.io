@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Soares">
         <link href="Profile.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Personal Website</title>
         <script src="Schedules.js"></script>
     </head>
@@ -13,67 +14,24 @@
         <div id="hero">
             <nav>
                 <h2 class="logo">Sen<span>geki</span></h2>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#social">Social</a></li>
-                </ul>
-                <button id=btn type="submit" onclick="link()">Schedules</button>
+                <button id=btn type="submit" onclick="link()">Projects</button>
             </nav>
-            <div class="profile">
-                <h4>Hi, I'm</h4>
-                <h1>Marco <span>Soares</span></h1>
-                <h3>I'm a Software Developer.</h3>
-            </div>
-            <section>
+            <div class="container">
                 <div class="main">
-                    <img src="Img/271185310_4764450283669123_2065362889276165415_n.jpg">
+                    <img src="Img/sengeki.webp">
                 </div>
-            </section>
-        </div>
-        <!-- About section -->
-        <div id="about">
-            <h2 class="title">About Me</h2>
-            <p>
-                <br>Hello, my name is Marco, and I'm at the peak of my 21 years. 
-                Currently, I'm on the path of Computer Engineering,
-                <br>but what truly ignites my enthusiasm is game development. This passion goes beyond the status of a mere hobby 
-                <br>it's a fundamental part of my life. From an early age, I immersed myself wholeheartedly in the 
-                exhilarating universe of game creation, entirely self-taught.
-                <br>My journey into game development began as a curious interest that quickly evolved into a genuine obsession.
-                <br> learned the intricacies of game programming and logic, experimenting with different technologies and languages. 
-                <br>The process of conceiving, designing, and building interactive worlds is an adventure that constantly captivates me.
-            </p>
-        </div>
-        <!-- Skills section -->
-        <div id="skills">
-            <h2 class="title">Skills</h2>
-            <div class="skill1">
-                <img src="Img/c-.png">
-                <h2>C++</h2>
-            </div>
-            <div class="skill2">
-                <img src="Img/java.png">
-                <h2>Java</h2>
-            </div>
-            <div class="skill3">
-                <img src="Img/python.png">
-                <h2>Python</h2>
+                <div class="profile">
+                    <h4>Hi, I'm</h4>
+                    <h1>Marco <span>Soares</span></h1>
+                    <h3>I'm a Software Developer.</h3>
+                    <a href="CV/PortfolioENG.pdf" download>
+                        <button id="btn-cv">
+                            <i class="fa fa-download"></i> Curriculum
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
-        <!-- Contact section -->
-        <div id="social">
-            <h2>Social</h2>
-            <p>Here Are My Socials That You Can Contact Me</p>
-            <div>
-                <a href="https://www.facebook.com/marco.pintoevorasoares/" target="_blank"><img src="Img/facebook.png"></a>
-                <a href="https://www.instagram.com/sengeki_marco/" target="_blank"><img src="Img/instagram.png"></a>
-                <a href="https://www.linkedin.com/in/marco-soares-77145225a/" target="_blank"><img src="Img/linkedIn.png"></a>
-            </div>
-        </div>
-        <footer>
-            <p>Copyright by <span>Marco Soares</span></p>
-        </footer>
     </body>
+    <footer></footer>
 </html>
