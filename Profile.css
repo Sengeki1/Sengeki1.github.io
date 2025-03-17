@@ -110,10 +110,10 @@ nav ul li a:hover::after {
 }
 
 .profile {
-    padding-left: 9%;
     height: fit-content; /* Shrinks height to fit content */
-    margin: auto 0;
-    ;
+    padding-top: 10px; 
+    padding-left: 10%;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -136,11 +136,26 @@ h4 {
 .main img {
     position: relative;
     max-width: 90%;
-    height: 90%;
-    margin-bottom: 30px;
-    left: 40px;
-    top: 30px;
-    opacity: 0.7;
+    margin-top: 10px; 
+    margin-left: 25px; 
+    opacity: 0.89;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;  
+}
+
+@keyframes blur-animation {
+    0% { box-shadow: 0 0 50px rgba(255, 255, 255, 0.137); }
+    50% { box-shadow: 0 0 100px rgba(255, 255, 255, 0.137); }
+    100% { box-shadow: 0 0 50px rgba(255, 255, 255, 0.137); }
+}
+
+.main img:hover {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.95;
+    animation: blur-animation 1.5s infinite;
 }
 
 #btn-cv {
@@ -180,7 +195,11 @@ h4 {
 }
 
 .container {
+    padding-bottom: 10px;
     color: white;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
 }
