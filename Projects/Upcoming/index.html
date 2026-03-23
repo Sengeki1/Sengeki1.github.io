@@ -49,7 +49,7 @@
         /* .vignette {
             position: fixed;
             inset: 0;
-            background: radial-gradient(ellipse at center, transparent 40%, rgba(12, 0, 80, 0.918) 100%);
+            background: radial-gradient(ellipse at center, transparent 40%, rgba(12, 0, 80, 0.55) 100%);
             z-index: 1;
             pointer-events: none;
         } */
@@ -69,8 +69,8 @@
             pointer-events: none;
         }
 
-        /* Red border frame
-        .border-frame {
+        /* Red border frame */
+        /* .border-frame {
             position: fixed;
             inset: 6px;
             border: 2px solid var(--red-dim);
@@ -85,7 +85,7 @@
             inset: 3px;
             border: 1px solid rgba(4, 102, 231, 0.945);
             border-radius: 2px;
-        }
+        } */
 
         /* Corner decorations */
         .corner {
@@ -376,8 +376,8 @@
                 <stop offset="100%" stop-color="#1a0000"/>
             </radialGradient>
         </defs>
-        <!-- <rect width="1440" height="900" fill="url(#redVignette)"/> -->
-        <!-- <rect width="1440" height="900" fill="url(#circuit)"/> -->
+        <!-- <rect width="1440" height="900" fill="url(#redVignette)"/>
+        <rect width="1440" height="900" fill="url(#circuit)"/> -->
     </svg>
 
     <!-- Overlay effects -->
@@ -398,51 +398,35 @@
         </div>
 
         <div class="menu-panel" role="navigation" aria-label="Main menu">
-            <button class="menu-btn" id="btn-games">
+            <button class="menu-btn" id="btn1">
                 <div class="btn-scan"></div>
-                <span class="btn-inner">Games</span>
+                <span class="btn-inner">Simulator</span>
             </button>
-            <button class="menu-btn" id="btn-upcoming">
+            <button class="menu-btn" id="btn2">
                 <div class="btn-scan"></div>
-                <span class="btn-inner">Upcoming</span>
+                <span class="btn-inner">God's Tower</span>
             </button>
-            <button class="menu-btn" id="btn-about">
+            <button class="menu-btn" id="btn-back">
                 <div class="btn-scan"></div>
-                <span class="btn-inner">About</span>
+                <span class="btn-inner">BACK</span>
             </button>
-            <button class="menu-btn" id="btn-exit">
-                <div class="btn-scan"></div>
-                <span class="btn-inner">Exit</span>
-            </button>
-        </div>
-
         <div class="status-bar">
             <span><span class="status-dot"></span>SYSTEM ONLINE</span>
             <span>VER 2.4.1</span>
             <span>// ARCADE //</span>
         </div>
     </div>
-
     <script>
-        document.querySelectorAll('.menu-btn').forEach((btn, i) => {
-            btn.style.animationDelay = `${0.4 + i * 0.12}s`;
-            btn.style.animation = `fadeInDown 0.6s ${0.4 + i * 0.12}s ease both`;
-        });
-
-        document.getElementById('btn-games').addEventListener("click", () => {
-            window.location.href = "games.html";
+        document.getElementById('btn1').addEventListener("click", () => {
+            window.location.href = "Simulator/index.html";
+        })
+        
+        document.getElementById('btn2').addEventListener("click", () => {
+            window.location.href = "GodsTower/index.html";
         })
 
-        document.getElementById('btn-exit').addEventListener("click", () => {
+        document.getElementById('btn-back').addEventListener("click", () => {
             window.location.href = "../index.html";
-        })
-
-        document.getElementById('btn-upcoming').addEventListener("click", () => {
-            window.location.href = "Upcoming/index.html";
-        })
-
-        document.getElementById('btn-about').addEventListener("click", () => {
-            window.location.href = "About/index.html";
         })
     </script>
 </body>

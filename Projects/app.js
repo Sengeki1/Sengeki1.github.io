@@ -1,3 +1,8 @@
+document.querySelectorAll('.menu-btn').forEach((btn, i) => {
+    btn.style.animationDelay = `${0.4 + i * 0.12}s`;
+    btn.style.animation = `fadeInDown 0.6s ${0.4 + i * 0.12}s ease both`;
+});
+
 document.getElementById("btn1").addEventListener("click", function() {
     window.location.href = "Runner/index.html";
 });
@@ -28,6 +33,10 @@ document.getElementById("btn7").addEventListener("click", function() {
 
 document.getElementById("btn8").addEventListener("click", function() {
     window.location.href = "Shooter/index.html";
+});
+
+document.getElementById("btn-back").addEventListener("click", function() {
+    window.location.href = "./index.html";
 });
 
 
